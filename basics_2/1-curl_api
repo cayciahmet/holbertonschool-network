@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Interact with an API using curl
+
+# 1. Fetch posts (GET)
+curl https://jsonplaceholder.typicode.com/posts
+
+# 2. Fetch headers only (HEAD)
+curl -I https://jsonplaceholder.typicode.com/posts
+
+# 3. Create a post (POST)
+curl -X POST -d "title=foo&body=bar&userId=1" https://jsonplaceholder.typicode.com/posts
